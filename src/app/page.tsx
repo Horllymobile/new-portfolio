@@ -39,6 +39,8 @@ import {
   SiHuggingface,
 } from "react-icons/si";
 import me from "../../public/me.png";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(false);
@@ -179,9 +181,9 @@ export default function Portfolio() {
       {/* Header & Nav */}
       <header className="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm z-50 border-b dark:border-gray-700">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="/">
+          <Link href="/">
             <h1 className="text-xl font-bold">Horllymobile</h1>
-          </a>
+          </Link>
           <button
             onClick={toggleDarkMode}
             className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition"
@@ -226,8 +228,8 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
             <div>
               <p className="mb-4 leading-relaxed">
-                I'm a Software Developer with 5+ years of experience crafting
-                clean, scalable softwares for startups and tech-driven
+                I&apos;m a Software Developer with 5+ years of experience
+                crafting clean, scalable softwares for startups and tech-driven
                 organizations. I thrive in collaborative environments and focus
                 on writing maintainable code with strong attention to detail.
               </p>
@@ -258,7 +260,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="text-center">
-              <img
+              <Image
                 src={me.src}
                 width={me.width}
                 height={me.height}
@@ -280,51 +282,54 @@ export default function Portfolio() {
               {
                 title: "Frontend",
                 icons: [
-                  <SiReact title="React" />,
-                  <SiNextdotjs title="Next.js" />,
-                  <SiTypescript title="TypeScript" />,
-                  <SiTailwindcss title="Tailwind CSS" />,
-                  <SiSvelte title="Svelte" />,
-                  <SiAngular title="Angular" />,
+                  <SiReact key="react" title="React" />,
+                  <SiNextdotjs key="nextjs" title="Next.js" />,
+                  <SiTypescript key="typescript" title="TypeScript" />,
+                  <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />,
+                  <SiSvelte key="svelte" title="Svelte" />,
+                  <SiAngular key="angular" title="Angular" />,
                 ],
               },
               {
                 title: "Backend",
                 icons: [
-                  <SiNodedotjs title="Node.js" />,
-                  <SiExpress title="Express" />,
-                  <SiFirebase title="Firebase" />,
-                  <SiMongodb title="MongoDB" />,
+                  <SiNodedotjs key="nodejs" title="Node.js" />,
+                  <SiExpress key="express" title="Express" />,
+                  <SiFirebase key="firebase" title="Firebase" />,
+                  <SiMongodb key="mongodb" title="MongoDB" />,
                 ],
               },
               {
                 title: "Mobile",
                 icons: [
-                  <SiReact title="React Native" />,
-                  <SiIonic title="Ionic" />,
-                  <SiKotlin title="Kotlin" />,
-                  <SiFlutter title="Flutter" />,
-                  <SiJetpackcompose title="Jetpack Compose" />,
+                  <SiReact key="react-native" title="React Native" />,
+                  <SiIonic key="ionic" title="Ionic" />,
+                  <SiKotlin key="kotlin" title="Kotlin" />,
+                  <SiFlutter key="flutter" title="Flutter" />,
+                  <SiJetpackcompose
+                    key="jetpack-compose"
+                    title="Jetpack Compose"
+                  />,
                 ],
               },
               {
                 title: "Tools",
                 icons: [
-                  <SiFigma title="Figma" />,
-                  <SiFirebase title="Firebase" />,
-                  <SiAppwrite title="Appwrite" />,
-                  <SiDocker title="Docker" />,
-                  <SiPostman title="Postman" />,
-                  <SiGit title="Git" />,
-                  <SiKubernetes title="Kubernetes" />,
+                  <SiFigma key="figma" title="Figma" />,
+                  <SiFirebase key="firebase" title="Firebase" />,
+                  <SiAppwrite key="appwrite" title="Appwrite" />,
+                  <SiDocker key="docker" title="Docker" />,
+                  <SiPostman key="postman" title="Postman" />,
+                  <SiGit key="git" title="Git" />,
+                  <SiKubernetes key="kubernetes" title="Kubernetes" />,
                 ],
               },
               {
                 title: "Testing",
                 icons: [
-                  <SiJest title="Jest" />,
-                  <SiCypress title="Cypress" />,
-                  <SiJunit5 title="JUnit 5" />,
+                  <SiJest key="jest" title="Jest" />,
+                  <SiCypress key="cypress" title="Cypress" />,
+                  <SiJunit5 key="junit5" title="JUnit 5" />,
                 ],
               },
             ].map((group) => (
@@ -446,8 +451,8 @@ export default function Portfolio() {
           <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-10">
             <div>
               <p className="mb-6 leading-relaxed">
-                I'm open to freelance opportunities, collaborations, or just a
-                chat about frontend development. Feel free to reach out!
+                I&apos;m open to freelance opportunities, collaborations, or
+                just a chat about frontend development. Feel free to reach out!
               </p>
               <div className="flex space-x-6 text-2xl">
                 <a

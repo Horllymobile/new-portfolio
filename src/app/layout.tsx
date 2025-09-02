@@ -1,20 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceCodePro = Source_Code_Pro({
+  variable: "--font-source-code-pro",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Horllymobile Portfolio - Abraham James",
   description: "Showcasing the projects and skills of Abraham James.",
+  keywords: [
+    "Horllymobile",
+    "Portfolio",
+    "Abraham James",
+    "Web Development",
+    "UI/UX Design",
+    "Software Engineering",
+    "Software Development",
+    "Full Stack Development",
+    "Software Developer",
+    "Software Tutoring",
+    "Mentorship",
+    "Coaching",
+  ],
 };
 
 export default function RootLayout({
@@ -24,9 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${sourceCodePro.variable} antialiased`}>
         {children}
       </body>
     </html>
