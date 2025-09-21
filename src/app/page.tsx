@@ -107,7 +107,7 @@ export default function Portfolio() {
       ],
     },
     {
-      role: "Frontend Developer",
+      role: "Mid Level Frontend Developer",
       company: "Vendease",
       period: "Jan 2022 - Feb 2025",
       highlights: [
@@ -121,7 +121,7 @@ export default function Portfolio() {
       ],
     },
     {
-      role: "Frontend Intern",
+      role: "Junior Frontend Developer",
       company: "Vendease",
       period: "Sep 2021 - 2022",
       highlights: [
