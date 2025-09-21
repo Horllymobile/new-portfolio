@@ -109,7 +109,7 @@ export default function Portfolio() {
     {
       role: "Frontend Developer",
       company: "Vendease",
-      period: "2020 – 2022",
+      period: "Jan 2022 - Feb 2025",
       highlights: [
         "Built scalable product catalog with dynamic filtering and search.",
         "Collaborated with UX team to deliver accessible, mobile-first designs.",
@@ -123,7 +123,7 @@ export default function Portfolio() {
     {
       role: "Frontend Intern",
       company: "Vendease",
-      period: "2022 – 2023",
+      period: "Sep 2021 - 2022",
       highlights: [
         "Converted Figma designs into responsive Angular components.",
         "Implemented unit and integration tests with Jest and Angular Testing Library.",
